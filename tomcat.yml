@@ -2,9 +2,7 @@
 - hosts: 192.168.1.51
 - tasks:
 - name: Install Java 1.7
-  yum: 
-    name: java-1.7.0-openjdk
-    state: present
+  yum: name=java-1.7.0-openjdk  state=present
 
 - name: add group "tomcat"
   group: name=tomcat
